@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PAINTING ASSISTANT</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+
+        <div class="chatbot">
+
+            <div class="top-bar">
+                <h1>🎨 Painting Assistant</h1>
+
+                <div class="top-buttons">
+                    <button id="themebutton">🌙Theme</button>
+                    <button id="historybutton">🕘History</button>
+                </div>
+            </div>
+
+            <div id="chatarea">
+                <div class="welcome-message">
+                    <h2>Welcome to Painting Assistant! 🎨</h2>
+                    <p>I'm here to help you explore the world of painting.</p>
+                    <p>Ask me about paints, colors, brushes, canvas, or techniques.</p>
+                </div>
+            </div>
+
+            <!-- History Panel -->
+            <div id="historypanel">
+                <h2>🕘 Chat History</h2>
+
+                <div id="historycontent"></div>
+
+                <button id="closehistory">Close</button>
+            </div>
+
+            <div class="input-area">
+                <input id="inputmsg" type="text" placeholder="Type your message here...">
+                <button id="chatbutton">Send</button>
+            </div>
+
+        </div>
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </body>
+</html>
